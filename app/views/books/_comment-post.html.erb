@@ -1,0 +1,5 @@
+   <!--bookに結びついたbook_commentにあるため、２つ引数が必要-->
+   <%= form_with model:[book,book_comment],remote: true do |f| %>
+     <%= f.text_area :comment,rows:"5",colums:"10" %>
+     <%= f.submit "送信" %>
+   <% end %>
