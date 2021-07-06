@@ -36,15 +36,15 @@
           <% end %>
         </tr>
       </table>
-      <!--コメント件数-->
+      <!--コメント一覧-->
       <div id="comments">
-        <%= render "comments", book: @book,book_comment: @book_comment %>
+        <%= render "comments", book: @book %>
       </div>
 
-     <!--コメント投稿-->
-     <div id="comment-post">
-       <%= render "comment-post", book: @book,book_comment: @book_comment %>
-    </div>
+       <!--コメント投稿-->
+       <div id="comment-post">
+         <%= render "comment-post", book: @book,book_comment: @book_comment %>
+      </div>
     </div>
   </div>
 </div>
